@@ -46,7 +46,7 @@ done < isitswarm.tmp
 
 #cat  posswarm_* > all_posswarms;
 mkdir possible-swarms
-mv pos* possible-swarms/
+mv possw* possible-swarms/
 sort swarms_per_day | uniq > swarms_per_day_final
 rm *.tmp
 find . -name "*.*0" -print0 | xargs -0 rm
